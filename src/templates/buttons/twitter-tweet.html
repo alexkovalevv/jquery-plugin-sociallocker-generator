@@ -1,0 +1,47 @@
+<li style="background-color:#1B95E0">
+    <label><input type="checkbox" id="slg-btn-twitter-tweet" class="slg-btn-ckeckbox" checked>
+        Twitter Tweet</label>
+
+    <div class="slg-sub-button-setting">
+        <p class="alert alert-warning" style='margin-bottom: 10px;'>
+            <strong>Внимание:</strong> из-за ограничений API Twitter, заблокированный контент может
+            быть доступен для посетителей, если зыкрыть диалоговое окно.
+        </p>
+
+        <p>
+            <label for="slg-btn-socialButtons-twitter-tweet-url"><strong>URL страницы</strong><i
+                    class="slg-icon-help"></i>
+                <span class="slg-field-hint">Задайте адрес страницы, которой пользователь должен поделиться, чтобы разблокировать скрытый контент. Оставьте это поле пустым, чтобы использовать адрес страницы, где будет установлен Замок.</span>
+            </label>
+            <input type="text" id="slg-btn-socialButtons-twitter-tweet-url" placeholder="http://sociallocker.ru"
+                   data-default="">
+        </p>
+
+        <p>
+            <label for="slg-btn-socialButtons-twitter-tweet-title"><strong>Короткое сообщение</strong><i
+                    class="slg-icon-help"></i>
+                <span class="slg-field-hint">Задайте сообщение для твита или оставьте это поле пустым, чтобы использовать сообщение по умолчанию. По умолчания: название страницы + ссылка.</span>
+            </label>
+            <textarea id="slg-btn-socialButtons-twitter-tweet-text" data-default=""></textarea>
+        </p>
+
+        <p>
+            <label for="slg-btn-socialButtons-twitter-tweet-via"><strong>через(via)</strong><i
+                    class="slg-icon-help"></i>
+                <span class="slg-field-hint">Необязательно. Ваше имя пользователя в Twitter, будет добавлено к твиту (указывается без @).</span>
+            </label>
+            <input type="text" id="slg-btn-socialButtons-twitter-tweet-via" data-default="">
+        </p>
+
+        <p>
+            <label for="slg-btn-socialButtons-twitter-tweet-title"><strong>Текст кнопки</strong><i
+                    class="slg-icon-help"></i>
+                <span class="slg-field-hint">Необязательно. Название кнопки, расположенное на обложке, используются в некоторых темах (по умолчанию только в Secrets и Flat).</span>
+            </label>
+            <input type="text" id="slg-btn-socialButtons-twitter-tweet-title" value="твитнуть"
+                   data-default="твитнуть">
+        </p>
+    </div>
+    <div class="slg-btn-edit"></div>
+    <div class="slg-btn-move"></div>
+</li>

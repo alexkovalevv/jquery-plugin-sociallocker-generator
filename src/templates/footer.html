@@ -1,0 +1,30 @@
+<div>
+    <!-- Put this script tag to the <head> of your page -->
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?142"></script>
+    <script type="text/javascript">
+        VK.init({
+            apiId: 4926980,
+            onlyWidgets: true
+        });
+    </script>
+    <p>Свой отзыв о сервисе, вы можете оставить ниже.</p>
+    <!-- Put this div tag to the place, where the Comments block will be -->
+    <div id="vk_comments"></div>
+    <script type="text/javascript">
+        VK.Widgets.Comments("vk_comments", {
+            limit: 15,
+            autoPublish: 1,
+            attach: "*",
+            pageUrl: 'http://generator.sociallocker.ru'
+        });
+    </script>
+</div>
+<div style="padding: 20px 0 20px 0;">
+    OnePress (c) 2017.
+    <a href="https://sociallocker.ru>" target="_blank" class="text-primary">
+        <strong>Социальный замок для jQuery</strong>
+    </a>.
+</div>
+
+
+

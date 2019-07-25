@@ -1,0 +1,26 @@
+<li style="background-color:#5F83AA"<?php if($plugin_build == 'free'):?> class="only-premium"<?php endif; ?>>
+<label><input type="checkbox" id="slg-btn-vk-subscribe" class="slg-btn-ckeckbox"> Вконтакте
+    Подписаться</label>
+<div class="slg-sub-button-setting">
+    <p>
+        <label for="slg-btn-socialButtons-vk-subscribe-groupId"><strong>Группа</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Числовой ID или короткое имя вашей страницы / группы в ВКонтакте. Например, для группы Яндекса (http://vk.com/yandex) корректное значение для этого поля будет 11283947 или yandex. Если вам нужна подписка на страницу пользователя, то перед id нужно указать символ @(пример: @id5537523 или @dkihot)</span>
+        </label>
+        <input type="text" id="slg-btn-socialButtons-vk-subscribe-groupId" data-default="">
+    </p>
+
+    <p>
+        <label for="slg-btn-socialButtons-vk-subscribe-title"><strong>Текст кнопки</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Необязательно. Название кнопки, расположенное на обложке, используются в некоторых темах (по умолчанию только в Secrets и Flat).</span>
+        </label>
+        <input type="text" id="slg-btn-socialButtons-vk-subscribe-title" value="подписаться"
+               data-default="подписаться">
+    </p>
+</div>
+<div class="slg-btn-edit"></div>
+<?php if($plugin_build == 'premium'):?>
+<div class="slg-btn-move"></div>
+<?php endif; ?>
+</li>

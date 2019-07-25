@@ -1,0 +1,31 @@
+<li style="background-color:#DB4437"<?php if($plugin_build == 'free'):?> class="only-premium"<?php endif; ?>>
+<label><input type="checkbox" id="slg-btn-google-youtube" class="slg-btn-ckeckbox"> Youtube
+    подписаться</label>
+<div class="slg-sub-button-setting">
+    <!--<p class="alert alert-warning" style='margin-bottom: 10px;'>
+        <strong>Внимание:</strong> if you get any errors when enabling or using the YouTube button, make sure that you <a href="howto/google-app.html" target="_blank">registered a Google App</a> for your website correctly.
+    </p>-->
+    <p>
+        <label for="slg-btn-socialButtons-google-youtube-channelId"><strong>ID канала</strong>
+            <i class="slg-icon-help"></i>
+                <span class="slg-field-hint">Установите ID вашего канала на Youtube (для примера,
+                <a href="http://www.youtube.com/channel/UCANLZYMidaCbLQFWXBC95Jg" target="_blank">UCANLZYMidaCbLQFWXBC95Jg</a>).
+                </span>
+        </label>
+        <input type="text" id="slg-btn-socialButtons-google-youtube-channelId" data-default="">
+    </p>
+
+    <p>
+        <label for="slg-btn-socialButtons-google-youtube-title"><strong>Текст кнопки</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Необязательно. Название кнопки, расположенное на обложке, используются в некоторых темах (по умолчанию только в Secrets и Flat).</span>
+        </label>
+        <input type="text" id="slg-btn-socialButtons-google-youtube-title" value="подписаться"
+               data-default="подписаться">
+    </p>
+</div>
+<div class="slg-btn-edit"></div>
+<?php if($plugin_build == 'premium'):?>
+<div class="slg-btn-move"></div>
+<?php endif; ?>
+</li>

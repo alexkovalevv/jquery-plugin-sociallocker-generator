@@ -1,0 +1,32 @@
+<li style="background-color:#0077B5"<?php if($plugin_build == 'free'):?> class="only-premium"<?php endif; ?>>
+<label><input type="checkbox" id="slg-btn-linkedin-share" class="slg-btn-ckeckbox"> Linkedin
+    Share</label>
+<div class="slg-sub-button-setting">
+    <p class="alert alert-warning" style='margin-bottom: 10px;'>
+        <strong>Внимание:</strong> из-за технической ошибки на стороне LinkedIn, заблокированный
+        контент может быть доступен для посетителей, если закрыть диалоговое окно.
+    </p>
+
+    <p>
+        <label for="slg-btn-socialButtons-linkedin-share-url"><strong>URL страницы</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Задайте адрес страницы, которой пользователь должен поделиться, чтобы разблокировать скрытый контент. Оставьте это поле пустым, чтобы использовать адрес страницы, где будет установлен Замок.</span>
+        </label>
+        <input type="text" id="slg-btn-socialButtons-linkedin-share-url" placeholder="http://sociallocker.org"
+               data-default="">
+    </p>
+
+    <p>
+        <label for="slg-btn-socialButtons-linkedin-share-title"><strong>Текст кнопки</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Необязательно. Название кнопки, расположенное на обложке, используются в некоторых темах (по умолчанию только в Secrets и Flat).</span>
+        </label>
+        <input type="text" id="slg-btn-socialButtons-linkedin-share-title" value="поделиться"
+               data-default="поделиться">
+    </p>
+</div>
+<div class="slg-btn-edit"></div>
+<?php if($plugin_build == 'premium'):?>
+<div class="slg-btn-move"></div>
+<?php endif; ?>
+</li>

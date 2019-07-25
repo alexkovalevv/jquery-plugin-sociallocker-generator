@@ -1,0 +1,29 @@
+<li style="background-color:#4965B5"<?php if($plugin_build == 'free'):?> class="only-premium"<?php endif; ?>>
+<label><input type="checkbox" id="slg-btn-facebook-like" class="slg-btn-ckeckbox"<?php if($plugin_build == 'premium'):?>
+    checked<?php endif; ?>>
+    Facebook мне нравится
+</label>
+<div class="slg-sub-button-setting">
+    <p>
+        <label for="slg-btn-socialButtons-facebook-like-url"><strong>URL страницы</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Задайте адрес страницы, которую пользователь должен "лайкнуть", чтобы разблокировать скрытый контент. Оставьте это поле пустым, чтобы использовать адрес страницы, где будет установлен Замок.</span>
+        </label>
+        <input type="text" id="slg-btn-socialButtons-facebook-like-url" placeholder="http://sociallocker.org"
+               data-default="">
+    </p>
+
+    <p>
+        <label for="slg-btn-socialButtons-facebook-like-title"><strong>Текст кнопки</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Необязательно. Название кнопки, расположенное на обложке, используются в некоторых темах (по умолчанию только в Secrets и Flat).</span>
+        </label>
+        <input type="text" id="slg-btn-socialButtons-facebook-like-title" value="мне нравится"
+               data-default="мне нравится">
+    </p>
+</div>
+<div class="slg-btn-edit"></div>
+<?php if($plugin_build == 'premium'):?>
+<div class="slg-btn-move"></div>
+<?php endif; ?>
+</li>

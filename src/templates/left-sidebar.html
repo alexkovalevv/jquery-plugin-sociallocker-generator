@@ -1,0 +1,119 @@
+<div class="slg-setting-panel slg-setting-panel-left">
+    <p style="margin-top: 0px;">
+        <label for="slg-selector"><strong>CSS селектор</strong><i class="slg-icon-help"></i>
+            <span class="slg-field-hint">Установите свой css селектор, чтобы выбрать содержимое, которое вы хотите заблокировать.<a
+                    href="http://www.youtube.com/watch?v=m7f9s3JhZcE">Смотреть
+                видео</a>, как выбрать селектор класса.</span>
+        </label>
+        <input type="text" id="slg-selector" placeholder=".to-lock">
+    </p>
+
+    <p>
+        <label for="slg-theme-name"><strong>Выберите тему</strong><i class="slg-icon-help"></i>
+            <span class="slg-field-hint">Вы можете подобрать стиль социального замка для вашего сайта из готового набора тем.</span>
+        </label>
+        <select id="slg-theme-name" data-default="starter">
+            <option value="starter" selected>Starter</option>
+            <option value="secrets">Secret</option>
+            <?php if($plugin_build == 'premium'):?>
+            <option value="flat">Flat</option>
+            <option value="dandyish">Dandish</option>
+            <option value="glass">Glass</option>
+            <?php endif; ?>
+        </select>
+    </p>
+    <p>
+        <label for="slg-theme-borderStyle" style="display: none"><strong>Изображение рамки</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Вставьте ссылку на изображение рамки для темы HomeBusinessABC. Размеры 740x756px, такой размер у текстуры по умолчанию. Хотя размер можно использовать любой. Пример ссылки: https://snag.gy/ZJ6VKb.jpg</span>
+        </label>
+        <input style="display: none" type="text" id="slg-theme-borderStyle" data-default="">
+    </p>
+
+    <p>
+        <label for="slg-overlap-mode"><strong>Режим наложения</strong><i class="slg-icon-help"></i>
+            <span class="slg-field-hint">Если включена эта опция, на спрятанное содержимое будет наложен прозрачный или размытый слой. В Internet Explorer размытие поддерживается в версии 10-11 и Edge.</span>
+        </label>
+        <select id="slg-overlap-mode" data-default="full">
+            <option value="full">Скрыть полностью</option>
+            <option value="transparence">Прозрачность</option>
+            <option value="blurring">Размытие</option>
+        </select>
+    </p>
+    <p>
+        <label for="slg-overlap-position"><strong>Позиция замка</strong><i class="slg-icon-help"></i>
+            <span class="slg-field-hint">Позиция замка относительно размытого содержимого..</span>
+        </label>
+        <select id="slg-overlap-position" data-default="middle">
+            <option value="top">Наверху</option>
+            <option value="middle" selected>По середине</option>
+            <option value="scroll">Прокручивает</option>
+        </select>
+    </p>
+    <p>
+        <label for="slg-overlap-intensity"><strong>Интенсивность размытия</strong><i class="slg-icon-help"></i>
+            <span class="slg-field-hint">Вы можете регулировать прозрачность или интесивность размытия.</span>
+        </label>
+        <select id="slg-overlap-intensity" data-default="5">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected>5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </p>
+    <p>
+        <label for="slg-locker-timer"><strong>Интервал таймера</strong><i class="slg-icon-help"></i>
+            <span class="slg-field-hint">Интервал таймера, через который замок будет разблокирован. Чтобы отключить, оставьте поле пустым.</span>
+        </label>
+        <input type="text" id="slg-locker-timer" data-default="0">
+    </p>
+
+    <p>
+        <label><input type="checkbox" id="slg-locker-close" data-default="0"> Кнопка закрыть<i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">В углу замка появляется кнопка закрыть, при нажатии на нее, замок разблокируеются.</span>
+        </label>
+    </p>
+
+    <p>
+        <label for="slg-modeExpires-notation"><strong> Период блокировки</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Установите время, через которое замок будет снова закрыт.</span>
+        </label>
+        <select id="slg-modeExpires-notation" data-default="none">
+            <option value="none">Выберите систему счисления</option>
+            <option value="day">День</option>
+            <option value="week">Неделя</option>
+            <option value="month">Месяц</option>
+            <option value="year">Год</option>
+        </select>
+    </p>
+    <p>
+        <label for="slg-modeExpires-interval" style="display: none"><strong>Интервал</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Введите период в выбранной вами системе счисления. Только целые числа.</span>
+        </label>
+        <input style="display: none" type="text" id="slg-modeExpires-interval" data-default="">
+    </p>
+    <hr/>
+    <p>
+        <label><input type="checkbox" id="slg-googleAnalytics" data-default="0"> Google аналитики<i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Если опция включена, плагин будет генерировать <a
+                    href="https://support.google.com/analytics/answer/1033068?hl=ru" target="_blank">события</a> для Google аналитики, когда замок будет разблокирован.<br><strong>Внимание:</strong> перед включением этой функции, пожалуйста <a
+                    href="https://support.google.com/analytics/answer/1008015?hl=ru" target="_blank">убедитесь</a>, что на вашем сайте установлен код Google аналитики, чтобы отслеживать данные.</span>
+        </label>
+    </p>
+
+    <p>
+        <label><input type="checkbox" id="slg-demo" data-default="0"> Не запоминать<i class="slg-icon-help"></i>
+            <span class="slg-field-hint">Если опция включена, открытие замка запоминаться не будет и при обновлении страницы, замок снова закроет контент.</span>
+        </label>
+    </p>
+</div>

@@ -1,0 +1,28 @@
+<li style="background-color:#1B95E0"<?php if($plugin_build == 'free'):?> class="only-premium"<?php endif; ?>>
+<label><input type="checkbox" id="slg-btn-twitter-follow" class="slg-btn-ckeckbox"> Twitter
+    подписаться</label>
+<div class="slg-sub-button-setting">
+    <p>
+        <label for="slg-btn-socialButtons-twitter-follow-url"><strong>Ссылка на профиль
+            пользователя</strong><i class="slg-icon-help"></i>
+                                    <span class="slg-field-hint">Вставьте полную ссылку на свой профиль в Twitter (включая http или https), на который пользователь должен подписаться, чтобы разблокировать скрытый контент. Для примера: <a
+                                            href="https://twitter.com/byonepress" target="_blank">https://twitter.com/byonepress</a></span>
+        </label>
+        <input type="text" id="slg-btn-socialButtons-twitter-follow-url"
+               placeholder="https://twitter.com/byonepress" data-default="">
+    </p>
+
+    <p>
+        <label for="slg-btn-socialButtons-twitter-follow-title"><strong>Текст кнопки</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Необязательно. Название кнопки, расположенное на обложке, используются в некоторых темах (по умолчанию только в Secrets и Flat).</span>
+        </label>
+        <input type="text" id="slg-btn-socialButtons-twitter-follow-title" value="подписаться"
+               data-default="подписаться">
+    </p>
+</div>
+<div class="slg-btn-edit"></div>
+<?php if($plugin_build == 'premium'):?>
+<div class="slg-btn-move"></div>
+<?php endif; ?>
+</li>

@@ -1,0 +1,13 @@
+/libs/php/aws-sdk/vendor/*
+/node_modules/*
+/temp/
+/tmp/
+/dist/
+dist/
+/dist
+/nbproject/private/
+/nbproject/private
+/.idea
+.idea/
+!/node_modules/grunt-onpress-preprocess/
+npm-debug.log

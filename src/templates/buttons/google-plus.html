@@ -1,0 +1,29 @@
+<li style="background-color:#DB4437"<?php if($plugin_build == 'free'):?> class="only-premium"<?php endif; ?>>
+<label><input type="checkbox" id="slg-btn-google-plus" class="slg-btn-ckeckbox"<?php if($plugin_build == 'premium'):?>
+    checked<?php endif; ?>>
+    Google плюс
+</label>
+<div class="slg-sub-button-setting">
+    <p>
+        <label for="slg-btn-socialButtons-google-plus-url"><strong>URL страницы</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Задайте адрес страницы, которой пользователь должен поделиться, чтобы разблокировать скрытый контент. Оставьте это поле пустым, чтобы использовать адрес страницы, где будет установлен Замок.</span>
+        </label>
+        <input type="text" id="slg-btn-socialButtons-google-plus-url" placeholder="http://sociallocker.ru"
+               data-default="">
+    </p>
+
+    <p>
+        <label for="slg-btn-socialButtons-google-plus-title"><strong>Текст кнопки</strong><i
+                class="slg-icon-help"></i>
+            <span class="slg-field-hint">Необязательно. Название кнопки, расположенное на обложке, используются в некоторых темах (по умолчанию только в Secrets и Flat).</span>
+        </label>
+        <input type="text" id="slg-btn-socialButtons-google-plus-title" value="плюсануть"
+               data-default="плюсануть">
+    </p>
+</div>
+<div class="slg-btn-edit"></div>
+<?php if($plugin_build == 'premium'):?>
+<div class="slg-btn-move"></div>
+<?php endif; ?>
+</li>
